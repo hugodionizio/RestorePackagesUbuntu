@@ -1,0 +1,33 @@
+[Desktop Entry]
+Name=GlassFish
+X-GNOME-FullName=GlassFish Server
+Comment=Functions GlassFish Server
+Keywords=server;web;Internet;
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=/home/hugo/Windows7/Pasta Pessoal/Bibliotecas/Softwares/Softwares Livres/Desenvolvimento/Comunicação/favicon.ico
+Categories=Server;
+X-Ubuntu-Gettext-Domain=glassfish4
+Actions=Start;Restart;Stop;Test;Console;
+Exec=sh -c "/opt/glassfish4/bin/asadmin start-domain && firefox localhost:8080"
+
+[Desktop Action Start]
+Exec=sh -c "/opt/glassfish4/bin/asadmin start-domain && firefox localhost:8080"
+Name=Start GlassFish
+
+[Desktop Action Restart]
+Exec=sh -c "/opt/glassfish4/bin/asadmin restart-domain && firefox localhost:8080"
+Name=Restart GlassFish
+
+[Desktop Action Stop]
+Exec=/opt/glassfish4/bin/asadmin stop-domain
+Name=Stop GlassFish
+
+[Desktop Action Test]
+Exec=firefox localhost:8080
+Name=Test GlassFish Server
+
+[Desktop Action Console]
+Exec=firefox localhost:4848
+Name=Open Console GlassFish
