@@ -1,7 +1,7 @@
 # Oracle Java
 sudo add-apt-repository ppa:webupd8team/java && sudo apt-get --quiet update
-sudo apt-get install oracle-java7-installer
-sudo apt-get install oracle-java7-set-default
+sudo apt-get install oracle-java8-installer
+sudo apt-get install oracle-java8-set-default
 
 # Eclipse C/C++
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com DCC7AFE0
